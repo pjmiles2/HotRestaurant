@@ -7,16 +7,23 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+<style>
+  .jumbotron {
+    text-align: center;
+  }
+</style>
 </head>
+
 <body>
 
   <div class="container">
-    <div class="jumbotron">
-      <h1>Hot Restaurant</h1>
+    <div class="jumbotron">    
+      <h1><span class = "glyphicon glyphicon-fire"></span>
+        Hot Restaurant</h1>
       <h3>Make a Reservation</h3>
       <hr>
-      <a href="/"><button class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-eye-open"></span>View Current List</button></a>
+      <a href="/"><button class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-eye-open"></span>
+        View Current List</button></a>
     </div>
     <div class="row">
 
@@ -52,7 +59,8 @@
             </form>
             <br>
             <div class="text-right">
-              <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span class="glyphicon glyphicon-fire"></span>Add to the List</button>
+              <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span class="glyphicon glyphicon-fire"></span>
+                Add to the List</button>
             </div>
           </div>
         </div>
