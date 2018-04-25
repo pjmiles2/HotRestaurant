@@ -16,7 +16,7 @@
       <h1>Hot Restaurant</h1>
       <h3>Make a Reservation</h3>
       <hr>
-      <a href="/"><button class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-eye-open"></span>View Current List</button></a>
+      <a href="/tables"><button class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-eye-open"></span>View Current List</button></a>
     </div>
     <div class="row">
 
@@ -71,11 +71,10 @@
         uniqueID: $("#id").val().trim()
       };
 
-      // Question: What does this code do??
-      $.post("/api/characters", newReservation)
+      $.post("/api/reservations", newReservation)
         .then(function(data) {
           console.log("add.html", data);
-          alert("Adding character...");
+          console.log("Adding reservation...");
         });
     });
   </script>
